@@ -34,12 +34,15 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.kategoriId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kategoriAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.kategoriId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kategoriAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ekle = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.duzelt = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.silme = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,10 +55,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.kategoriId,
-            this.kategoriAd});
+            this.kategoriAd,
+            this.ekle,
+            this.duzelt,
+            this.silme});
             this.dataGridView1.Location = new System.Drawing.Point(24, 130);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(363, 167);
+            this.dataGridView1.Size = new System.Drawing.Size(551, 167);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -86,7 +92,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Location = new System.Drawing.Point(403, 51);
+            this.groupBox1.Location = new System.Drawing.Point(549, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(248, 100);
             this.groupBox1.TabIndex = 8;
@@ -99,18 +105,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(201, 20);
             this.textBox3.TabIndex = 0;
-            // 
-            // kategoriId
-            // 
-            this.kategoriId.DataPropertyName = "kategoriId";
-            this.kategoriId.HeaderText = "Numarası";
-            this.kategoriId.Name = "kategoriId";
-            // 
-            // kategoriAd
-            // 
-            this.kategoriAd.DataPropertyName = "kategoriAd";
-            this.kategoriAd.HeaderText = "Kategori Adı";
-            this.kategoriAd.Name = "kategoriAd";
             // 
             // button4
             // 
@@ -152,6 +146,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // kategoriId
+            // 
+            this.kategoriId.DataPropertyName = "kategoriId";
+            this.kategoriId.HeaderText = "Numarası";
+            this.kategoriId.Name = "kategoriId";
+            // 
+            // kategoriAd
+            // 
+            this.kategoriAd.DataPropertyName = "kategoriAd";
+            this.kategoriAd.HeaderText = "Kategori Adı";
+            this.kategoriAd.Name = "kategoriAd";
+            // 
+            // ekle
+            // 
+            this.ekle.HeaderText = "Ekle";
+            this.ekle.Name = "ekle";
+            this.ekle.Text = "Ekle";
+            this.ekle.UseColumnTextForButtonValue = true;
+            // 
+            // duzelt
+            // 
+            this.duzelt.HeaderText = "Düzelt";
+            this.duzelt.Name = "duzelt";
+            this.duzelt.Text = "Düzelt";
+            this.duzelt.UseColumnTextForButtonValue = true;
+            // 
+            // silme
+            // 
+            this.silme.HeaderText = "Silme";
+            this.silme.Name = "silme";
+            this.silme.Text = "Silme";
+            this.silme.UseColumnTextForButtonValue = true;
+            // 
             // Urunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,5 +218,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn kategoriId;
         private System.Windows.Forms.DataGridViewTextBoxColumn kategoriAd;
+        private System.Windows.Forms.DataGridViewButtonColumn ekle;
+        private System.Windows.Forms.DataGridViewButtonColumn duzelt;
+        private System.Windows.Forms.DataGridViewButtonColumn silme;
     }
 }
